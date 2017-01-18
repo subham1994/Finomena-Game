@@ -59,11 +59,11 @@ $(document).ready(function() {
 			$('#configuration-form').on('submit', function(event) {
 				event.preventDefault();
 				socket.emit('start game', {
-					row: $('select[name=row]').val(),
+					row: $('select[name=row]').val() || 4,
 					col: 4,
-					maxPlrs: $('select[name=maxplrs]').val(),
-					pauseDur: $('select[name=pausedur]').val(),
-					gameDur: $('select[name=gamedur]').val()
+					maxPlrs: $('select[name=maxplrs]').val() || 2,
+					pauseDur: $('select[name=pausedur]').val() || 2,
+					gameDur: $('select[name=gamedur]').val() || 30
 				});
 				$('#configuration-modal').modal('close');
 			});
