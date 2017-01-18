@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>Finomenal Game</title>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body class="block blue">
+		<div class="container" style="margin-top: 150px;">	
+			<div class="row">
+				<div class="col l6 m6 s12 offset-l3">
+					<div class="card">
+						<div class="card-content">
+							<h3 class="game-title center">Finomenal Board Game</h3>
+							<h4 class="game-desc center">Can you conquer them all ?</h4>
+							<form method="POST" action="/game">
+								<nav class="white" style="color: rgba(0, 0, 0, 0.71); margin-bottom: 10px; margin-top: 50px;">
+									<div class="nav-wrapper">	
+										<div class="input-field">
+											<input name="username" id="search" type="search" placeholder="Enter a username" required>
+											<i class="material-icons">close</i>
+										</div>
+									</div>
+								</nav>
+								<button type="submit" class="btn btn-large waves-effect waves-light blue btn-block">
+									Join game
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	</body>
+</html>

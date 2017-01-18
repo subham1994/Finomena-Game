@@ -1,0 +1,129 @@
+@media (min-width: 993px) {
+    .leaderboard {
+        border-radius: 0px; 
+        width: 29%;
+        position: fixed;
+    }
+
+    .game-tile {
+        width: 105px;
+        height: 105px; 
+    }
+}
+
+@media (max-width: 993px) {
+    .game-tile {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+html, body, .block {
+    height: 100%;
+}
+
+.container{
+    width: 90%;
+}
+
+.timer {
+    width: 150px;
+    background-color: #FFF;
+    border-radius: 2px;
+    color: #2196F3;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    float: right;
+}
+
+.game-tile {
+    background: #FFF;
+    margin-top: 15px !important;
+}
+
+.game-title {
+	color: #2196F3;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.pause-text {
+	color: rgba(0, 0, 0, 0.65);;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.game-desc {
+	color: rgba(0, 0, 0, 0.65);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.leaderboard-header {
+    color: #2196F3;
+	font-size: 20px;
+	font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.btn {
+    color: #FFF;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.input-field label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-field label.active {
+    font-weight: 600;
+    font-size: 14px;
+    color: #2196F3;
+}
+
+input:not([type]), input[type="text"], input[type="password"],
+input[type="email"], input[type="url"], input[type="time"],
+input[type="date"], input[type="datetime-local"],
+input[type="tel"], input[type="number"], input[type="search"],
+textarea.materialize-textarea, .select-wrapper input.select-dropdown {
+    border-bottom: 1px solid #cfd8dc;
+}
+
+.input-field input[type="text"]:focus {
+    border-bottom: 1px solid #2196F3;
+    box-shadow: 0 1px 0 0 #2196F3;
+}
+
+.select-wrapper input.select-dropdown, .dropdown-content li > a, .dropdown-content li > span {
+    color: #9e9e9e;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dropdown-content li {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important; 
+}
+
+.select-dropdown li.disabled, .select-dropdown li.disabled > span,
+.select-dropdown li.optgroup {
+    font-weight: 600;
+    font-size: 14px;    
+    color: #4285f4;
+}
