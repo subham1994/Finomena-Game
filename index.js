@@ -51,6 +51,7 @@ io.on('connection', (socket) => {
 			}
 		}
 		playerNum = 1;
+		gameConfigured = false;
 		io.emit('timeout', winner);
 		sockets.forEach((socket) => {
 			socket.disconnect();
