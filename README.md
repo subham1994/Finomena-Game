@@ -1,7 +1,5 @@
 ##Finomenal Board Game##
 
-[Play Finomenal game online](http://shielded-hollows-70199.herokuapp.com/)
-
 **How to run locally**
 
  - You must have node.js installed (version used in project v7.2.0)
