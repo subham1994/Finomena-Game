@@ -5,7 +5,7 @@ $(document).ready(function() {
 	$('.modal').modal({
 		dismissible: false, // Modal can be dismissed by clicking outside of the modal
 		opacity: 1, // Opacity of modal background
-    });
+	});
 
 	var socket = io();
 	var $playersList = $('#players-list');
@@ -70,8 +70,9 @@ $(document).ready(function() {
 		}
 	});
 
-	socket.on('pre game', function() {
-		var $text = $('<h3 class="pause-text">Waiting for game configurations !</h3>');
+	socket.on('pre game', function(notif) {
+		$('#tiles').css('display', 'none');
+		var $text = $('<h3 class="pause-text">' + notif.msg  + '</h3>');
 		showNotificationBanner('icons/hourglass.png', $text);
 	});
 
@@ -81,6 +82,7 @@ $(document).ready(function() {
 		var users = board.users;
 		var numTiles = board.numTiles;
 		var $tiles = $('#tiles');
+		$tiles.css('display', 'inherit');
 		$tiles.html('');
 		for (var i = 1; i <= numTiles; i++) {
 			// check if the tile is already occupied and paint accordingly
